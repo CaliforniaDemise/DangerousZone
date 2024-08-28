@@ -1,0 +1,6 @@
+plugins {
+    id 'java'
+}
+
+group = 'surreal'
+version = '1.0'
