@@ -1,7 +1,7 @@
 # DangerousZone
 An implementation of Orespawn installer for Forge 1.12.2 and 1.7.10
 
-### Doesn't it infrindge copyright?
+### Doesn't it infringe copyright?
 Not really. It only installs publicly available Orespawn jars with coremod.
 None of the assets or code is redistributed.
 
