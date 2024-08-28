@@ -29,8 +29,9 @@ subprojects {
 
     build {
         afterEvaluate {
-            var f = new File(buildDir, "libs/" + tasks.remapJar.archiveFileName.get())
-            f.renameTo(new File(rootProject.buildDir, "libs/" + rootProject.archivesBaseName + "-" + tasks.remapJar.archiveFileName.get()))
+            var f = new File(rootProject.buildDir, "libs/" + rootProject.archivesBaseName + "-" + tasks.remapJar.archiveFileName.get())
+            f.getParentFile().mkdirs()
+            new File(buildDir, "libs/" + tasks.remapJar.archiveFileName.get()).renameTo(f)
         }
     }
 
